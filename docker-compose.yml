@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  client:
+    build: .
+    container_name: quiz-client-frontend
+    ports:
+      - '2005:3000'
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
